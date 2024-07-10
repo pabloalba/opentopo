@@ -1,0 +1,45 @@
+body {
+    text-align: center;
+    font-family: Montserrat, Helvetica, Arial, sans-serif;
+
+    background-image: url("media/diploma.jpg");
+    background-repeat: no-repeat;
+}
+
+
+
+.content {
+    box-sizing: border-box;
+    position: relative;
+    width: 1123px;
+    height: 795px;
+    font-size: 36px;
+    text-align: center;
+    padding: 0 200px;
+}
+
+
+.text {
+    padding-top: 237px;
+}
+
+#character {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#signature {
+    position: absolute;
+    bottom: 190px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-family: "Licorice", cursive;
+    font-size: 62px;
+}
+
+#kid-name {
+    text-transform: uppercase;
+    font-weight: bold;
+}

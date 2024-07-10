@@ -1,0 +1,74 @@
+<html lang="es">
+
+<head>
+    <title>OpenTopo</title>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='opentopo.css' type='text/css' media='all' />
+    <link rel="icon" type="image/x-icon" href="/media/favicon.ico">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="main-screen" class="screen main-screen">
+            <div id="main-screen-title">
+                ELIGE UNA AVENTURA
+            </div>
+            <div id="trips-list" class="trips-list"></div>
+        </div>
+        <div id="trip-screen" class="screen trip-screen">
+            <div id="trip-screen-title">
+                <img id="trip-screen-title-img" src="media/opentopo.png" />
+                <div id="trip-screen-title-text" ¡Elige una aventura!></div>
+                <div id="trip-screen-title-menu" onClick="toggleTripMenu()">&#9776;</div>
+                <div id="trip-screen-menu">
+                    <div onClick="downloadMap()">&#128506;&nbsp;&nbsp;&nbsp;&nbsp;DESCARGAR MAPA</div>
+                    <div onClick="deleteTrip()">&#128465;&nbsp;&nbsp;&nbsp;&nbsp;ELIMINAR AVENTURA</div>
+                    <div id="show-award" onClick="openAward()">&#9993;&nbsp;&nbsp;&nbsp;&nbsp;MOSTRAR DIPLOMA</div>
+                    <div onClick="goBackToMain()">&#9664;&nbsp;&nbsp;&nbsp;&nbsp;VOLVER</div>
+                </div>
+            </div>
+            <div id="places">
+            </div>
+            <div id="places-done-container" class="places-done-container">
+                <div class="subtitle">Pruebas realizadas</div>
+                <div id="places-done"></div>
+            </div>
+
+        </div>
+        <div id="question-screen" class="screen question-screen">
+            <div id="question-title"></div>
+            <div id="question-numbers">
+            </div>
+            <div id="question-body" class="question-body">
+                <div id="question-text" class="question-text">
+                </div>
+                <div id="question-answers" class="question-answers">
+                </div>
+            </div>
+            <div id="question-buttons" class="question-buttons">
+                <div onClick="questionGoBack()">&#9664;&nbsp;&nbsp;Volver</div>
+                <div onClick="questionNext()">Continuar&nbsp;&nbsp;&#9654;</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="dialog" class="dialog">
+        <div id="dialog-body" class="dialog-body">
+            <div id="dialog-title" class="dialog-title">Título</div>
+            <div id="dialog-content" class="dialog-content">Contenido</div>
+            <div id="dialog-buttons" class="dialog-buttons">
+                <div id="dialog-button1" class="dialog-button">NO</div>
+                <div id="dialog-button2" class="dialog-button">SI</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="trips.js"></script>
+    <script src="skins.js"></script>
+    <script src="opentopo.js"></script>
+</body>
+
+</html>
